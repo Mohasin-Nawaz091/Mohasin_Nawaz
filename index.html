@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - MNA</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <h2 style="font-size: 27px">
+        <a href="#home" id="zaz">mohasin.</a>
+      </h2>
+      <nav>
+        <ul>
+          <li><a href="#home" class="links">Home</a></li>
+          <li><a href="#about" class="links">About</a></li>
+          <li><a href="#services" class="links">Services</a></li>
+          <li><a href="#projects" class="links">Projects</a></li>
+          <li><a href="#contact" class="links">Contact</a></li>
+          <i class="fa-solid fa-lightbulb links" id="bulb"></i>
+        </ul>
+      </nav>
+      <i class="fa-solid fa-bars" id="menu-open"></i>
+      <i class="fa-solid fa-xmark" id="menu-close"></i>
+    </header>
+
+    <!-- Main Home Section -->
+    <section id="home">
+      <div id="home-left">
+        <div id="triangle">
+          <img src="./Images/triangle.svg" alt="triangle" />
+        </div>
+        <div>
+          <p style="margin: 3px 10px; font-size: 17px" id="iAm">Hey, I'm</p>
+          <h1>Mohasin Nawaz</h1>
+          <p id="developer">Frontend Web & App Developer, where creativity meets code.</p>
+        </div>
+        <div style="display: flex; gap: 20px">
+          <button id="portfolio" onclick="location.href='#projects'" style="background-color: rgba(255, 255, 255, 0); color: #7453fe;">My Work</button>
+          <button onclick="location.href='#contact'">Reach Out</button>
+        </div>
+      </div>
+      <div id="home-right">
+        <div id="home-right-img">
+          <img src="./Images/home.png" alt="main-background" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div id="about-container">
+        <div id="about-pic">
+          <img src="./Images/about.svg" alt="about me" />
+        </div>
+        <div id="about-info">
+          <h2 id="about-me">About Me</h2>
+          <h4>Front-End Developer</h4>
+          <p>
+            Hey! I’m
+            <span style="color: #7453fe; font-weight: 500; font-size: 17.5px;"
+              >Mohasin Nawaz</span
+            >, a BS Software Engineering student at IMSciences Peshawar, eager about creating modern, functional, and visually engaging digital experiences. From responsive websites to smooth and intuitive mobile apps, I love building products that look premium and work flawlessly.<br /><br />
+           Alongside my degree, I’m actively sharpening my skills through real-world projects and professional training. I’ve gained hands-on experience in Front-End Web Development, Flutter App Development, WordPress, and C++ OOP, and I’m always exploring new tools, frameworks, and technologies to level up my craft.
+          </p>
+          <a style="text-decoration: none; color: #7453fe;" href="./Images/MOHASIN_NAWAZ.pdf" download><button>My Resume</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2 class="h2">Services</h2>
+      <p id="services-text">
+       I craft modern, high-quality websites and mobile apps that blend stunning design with flawless performance. With expertise in front-end development, Flutter, and WordPress, I deliver fast, responsive, and user-centric digital experiences built with clean code and attention to detail. My goal is simple: turn your ideas into refined, functional, and visually impressive solutions.
+      </p>
+      <div id="cards">
+        <div class="card">
+          <div class="card-img">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3>Development</h3>
+          <p>
+            Crafting visually stunning websites & apps with cutting-edge technologies
+            to elevate your online presence and captivate your audience.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>
+            Designing sleek and intuitive interfaces that seamlessly adapt to
+            any device, ensuring an unparalleled user experience across
+            platforms.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Clean Code</h3>
+          <p>
+            Developing robust and maintainable codebases that prioritize
+            efficiency, scalability, and security, laying the foundation for
+            your digital success.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" style="margin-top: 100px">
+      <h2 class="h2">Projects</h2>
+      <div id="projects-container">
+        <div class="project">
+          <div class="project-text">
+            <h3>Star Data Business</h3>
+            <p>
+              A modern data-driven platform built to visualize information in a clear, interactive, and meaningful way. The system focuses on transforming raw data into actionable insights using clean UI, smooth interactions, and intuitive design. My role included developing a visually appealing interface, optimizing performance, and ensuring that users can easily explore and understand complex data with a seamless experience.
+            </p>
+            <button class="check-project" onclick="window.open('https://stardatabusiness.com/', '_blank')">Check It Out</button>
+          </div>
+          <div class="project-img">
+            <img src="./Images/Projects/star-data.png" alt="Star-Data-Business" />
+          </div>
+        </div>
+        <div class="project project-reverse">
+          <div class="project-img">
+            <img src="./Images/Projects/ses-pesh.png" alt="SES-Peshawar" />
+          </div>
+          <div class="project-text">
+            <h3>SES Peshawar</h3>
+            <p>
+              A professional informational website built for Sarhad Education System with a premium layout, separate Boys & Girls sections, and a clean academic design based on the school’s branding. The site highlights faculty, buildings, and fee details with smooth navigation and a modern user experience.
+             
+            </p>
+            <button class="check-project" onclick="window.open('https://sespeshawar.com/', '_blank')">Check It Out</button>
+          </div>
+        </div>
+        <div class="project">
+          <div class="project-text">
+            <h3>CP Team management system</h3>
+            <p>
+              A streamlined team management system designed for CyberPashto to simplify task handling, team organization, and workflow tracking. It features a clean UI, smooth navigation, and efficient tools for managing members, assigning tasks, and monitoring progress — all built to improve productivity and collaboration.
+            </p>
+            <button class="check-project" onclick="window.open('https://mohasin-nawaz091.github.io/CyberPashto/Project/', '_blank')">Check It Out</button>
+          </div>
+          <div class="project-img">
+            <img src="./Images/Projects/cp.png" alt="team-management-system" />
+          </div>
+        </div>
+        <div class="project project-reverse">
+          <div class="project-img">
+            <img src="./Images/Projects/quiz.png" alt="interactive-quiz" />
+          </div>
+          <div class="project-text">
+            <h3>Interactive Quiz</h3>
+            <p>
+               An interactive quiz game developed with HTML, CSS, and JavaScript.
+              This project features dynamic question generation, real-time score
+              tracking, and smooth transitions between questions, providing an
+              engaging user experience for tech enthusiasts.
+            </p>
+            <button class="check-project" onclick="window.open('https://mohasin-nawaz091.github.io/interactive-quiz/', '_blank')">Check It Out</button>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="h2">Contact</h2>
+      <div id="contacts">
+        <div class="contact-info">
+          <div class="contact-img">
+            <i class="fa-solid fa-phone text-2xl"></i>
+          </div>
+          <div class="contact-real">
+            <h4>Phone</h4>
+            <p>+92 315 8790134</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-img">
+            <i class="fa-regular fa-envelope text-2xl"></i>
+          </div>
+          <div class="contact-real">
+            <h4>Email</h4>
+            <p>mohasinnawaz.4@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="contact-info">
+          <div class="contact-img">
+            <i class="fa-solid fa-location-dot text-2xl"></i>
+          </div>
+          <div class="contact-real">
+            <h4>Address</h4>
+            <p>Gulbahar, Peshawar, Pakistan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div id="footer-info">
+        <strong style="font-size: 1.5em;">Developed by Mohasin Nawaz</strong>
+        <div id="social-icons">
+          <a href="https://www.linkedin.com/in/mohasin-nawaz-841a24240/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Mohasin-Nawaz091/" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+          <a href="https://www.instagram.com/mohasin_091/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <p style="font-size: 17px">
+        Copyright &copy; 2025 <strong>Mohasin,</strong> Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
